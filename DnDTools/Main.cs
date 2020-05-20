@@ -33,8 +33,8 @@ namespace DnDTools
                 Close();
         }
 
-        // FORM FUNCTIONS //
-        #region
+        // FUNCTIONS //
+        #region Form functions
         private void RefreshComboBox()
         {
             cbxStatsSelectCharacter.Items.Clear();
@@ -81,11 +81,11 @@ namespace DnDTools
 
 		#endregion
 
-		// EVENTS - STATS //
-		#region
+		// EVENTS //
+		#region Events - Stats
         
         // Character selection
-		#region
+		#region Character selection
 		private void cbxSelectPartyCharacter_SelectionChangeCommitted(object sender, EventArgs e)
         {
             _currentCharacter = cbxStatsSelectCharacter.SelectedIndex;
@@ -127,7 +127,7 @@ namespace DnDTools
 		#endregion
 
 		// General stats
-		#region
+		#region General stats
 		private void lblValueStatus_Click(object sender, EventArgs e)
         {
             cbxStatsSetStatus.Items.Clear();
@@ -142,24 +142,36 @@ namespace DnDTools
 
         private void lblValueHealth_Click(object sender, EventArgs e)
         {
-            FormController.TbxHide(this, "tbxStatsSet");
+            FormController.LblHide(this, true, "lblStatsValue");
+            lblStatsValueHealth.Visible = false;
+            FormController.TbxHide(this, false, "tbxStatsSet");
+            FormController.BtnHide(this, false, "btnStatsSet");
             tbxStatsSetHealth.Visible = true;
+            btnStatsSetHealth.Visible = true;
             tbxStatsSetHealth.Text = DataStorage.PartyCharacters[_currentCharacter].Health.ToString();
             tbxStatsSetHealth.Focus();
         }
 
         private void lblValueRations_Click(object sender, EventArgs e)
         {
-            FormController.TbxHide(this, "tbxStatsSet");
+            FormController.LblHide(this, true, "lblStatsValue");
+            lblStatsValueRations.Visible = false;
+            FormController.TbxHide(this, false, "tbxStatsSet");
+            FormController.BtnHide(this, false, "btnStatsSet");
             tbxStatsSetRations.Visible = true;
+            btnStatsSetRations.Visible = true;
             tbxStatsSetRations.Text = DataStorage.PartyCharacters[_currentCharacter].Rations.ToString();
             tbxStatsSetRations.Focus();
         }
 
         private void lblValueGold_Click(object sender, EventArgs e)
         {
-            FormController.TbxHide(this, "tbxStatsSet");
+            FormController.LblHide(this, true, "lblStatsValue");
+            lblStatsValueGold.Visible = false;
+            FormController.TbxHide(this, false, "tbxStatsSet");
+            FormController.BtnHide(this, false, "btnStatsSet");
             tbxStatsSetGold.Visible = true;
+            btnStatsSetGold.Visible = true;
             tbxStatsSetGold.Text = DataStorage.PartyCharacters[_currentCharacter].Gold.ToString();
             tbxStatsSetGold.Focus();
         }
@@ -170,6 +182,8 @@ namespace DnDTools
             {
                 DataStorage.PartyCharacters[_currentCharacter].Health = Validation.CheckIfValidInt(tbxStatsSetHealth.Text.ToString());
                 FormController.TbxClear(this, "tbxStatsSet");
+                lblStatsValueHealth.Visible = true;
+                btnStatsSetHealth.Visible = false;
                 tbxStatsSetHealth.Visible = false;
                 RefreshStats(_currentCharacter);
             }
@@ -181,6 +195,8 @@ namespace DnDTools
             {
                 DataStorage.PartyCharacters[_currentCharacter].Rations = Validation.CheckIfValidInt(tbxStatsSetRations.Text.ToString());
                 FormController.TbxClear(this, "tbxStatsSet");
+                lblStatsValueRations.Visible = true;
+                btnStatsSetRations.Visible = false;
                 tbxStatsSetRations.Visible = false;
                 RefreshStats(_currentCharacter);
             }
@@ -192,6 +208,8 @@ namespace DnDTools
             {
                 DataStorage.PartyCharacters[_currentCharacter].Gold = Validation.CheckIfValidInt(tbxStatsSetGold.Text.ToString());
                 FormController.TbxClear(this, "tbxStatsSet");
+                lblStatsValueGold.Visible = true;
+                btnStatsSetGold.Visible = false;
                 tbxStatsSetGold.Visible = false;
                 RefreshStats(_currentCharacter);
             }
@@ -200,7 +218,7 @@ namespace DnDTools
 		#endregion
 
 		// Death saves
-		#region
+		#region Death Saves
 		private void btnStatsDeathSavesAddSuccess_Click(object sender, EventArgs e)
         {
             if (DataStorage.PartyCharacters[_currentCharacter].DeathSavingThrowSuccess < 3)
@@ -234,7 +252,7 @@ namespace DnDTools
 		#endregion
 
 		// Spell slots
-		#region
+		#region Spell slots
 		private void lblStatsValueSpellSlot1stLevel_Click(object sender, EventArgs e)
         {
 
