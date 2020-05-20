@@ -16,6 +16,7 @@ namespace DnDTools
         public string Name { get; set; }
         public StatusTypes Status { get; set; } = StatusTypes.Alive;
         public int Initiative { get; set; }
-        public int Health { get; set; }
+        public int HealthCurrent { get; set; }
+        public int HealthMaximum { get; set; }
     }
 }

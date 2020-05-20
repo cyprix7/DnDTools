@@ -59,7 +59,7 @@ namespace DnDTools
             lblStatsValueName.Text = character.Name;
             lblStatsValueStatus.Text = character.Status.ToString();
 
-            lblStatsValueHealth.Text = character.Health.ToString();
+            lblStatsValueHealth.Text = character.HealthCurrent.ToString();
             lblStatsValueRations.Text = character.Rations.ToString();
             lblStatsValueGold.Text = character.Gold.ToString();
 
@@ -68,15 +68,15 @@ namespace DnDTools
             lblStatsValueDeathSavesFailures.Text = $"{character.DeathSavingThrowFailure} / 3";
 
             // Spell Slots
-            lblStatsValueSpellSlot1stLevel.Text = character.SpellSlots1stLevel.ToString();
-            lblStatsValueSpellSlot2ndLevel.Text = character.SpellSlots2ndLevel.ToString();
-            lblStatsValueSpellSlot3rdLevel.Text = character.SpellSlots3rdLevel.ToString();
-            lblStatsValueSpellSlot4thLevel.Text = character.SpellSlots4thLevel.ToString();
-            lblStatsValueSpellSlot5thLevel.Text = character.SpellSlots5thLevel.ToString();
-            lblStatsValueSpellSlot6thLevel.Text = character.SpellSlots6thLevel.ToString();
-            lblStatsValueSpellSlot7thLevel.Text = character.SpellSlots7thLevel.ToString();
-            lblStatsValueSpellSlot8thLevel.Text = character.SpellSlots8thLevel.ToString();
-            lblStatsValueSpellSlot9thLevel.Text = character.SpellSlots9thLevel.ToString();
+            lblStatsValueSpellSlot1stLevel.Text = character.SpellSlots1stLevelCurrent.ToString();
+            lblStatsValueSpellSlot2ndLevel.Text = character.SpellSlots2ndLevelCurrent.ToString();
+            lblStatsValueSpellSlot3rdLevel.Text = character.SpellSlots3rdLevelCurrent.ToString();
+            lblStatsValueSpellSlot4thLevel.Text = character.SpellSlots4thLevelCurrent.ToString();
+            lblStatsValueSpellSlot5thLevel.Text = character.SpellSlots5thLevelCurrent.ToString();
+            lblStatsValueSpellSlot6thLevel.Text = character.SpellSlots6thLevelCurrent.ToString();
+            lblStatsValueSpellSlot7thLevel.Text = character.SpellSlots7thLevelCurrent.ToString();
+            lblStatsValueSpellSlot8thLevel.Text = character.SpellSlots8thLevelCurrent.ToString();
+            lblStatsValueSpellSlot9thLevel.Text = character.SpellSlots9thLevelCurrent.ToString();
         }
 
 		#endregion
@@ -148,7 +148,7 @@ namespace DnDTools
             FormController.BtnHide(this, false, "btnStatsSet");
             tbxStatsSetHealth.Visible = true;
             btnStatsSetHealth.Visible = true;
-            tbxStatsSetHealth.Text = DataStorage.PartyCharacters[_currentCharacter].Health.ToString();
+            tbxStatsSetHealth.Text = DataStorage.PartyCharacters[_currentCharacter].HealthCurrent.ToString();
             tbxStatsSetHealth.Focus();
         }
 
@@ -180,7 +180,7 @@ namespace DnDTools
         {
             if (tbxStatsSetHealth.Text != "")
             {
-                DataStorage.PartyCharacters[_currentCharacter].Health = Validation.CheckIfValidInt(tbxStatsSetHealth.Text.ToString());
+                DataStorage.PartyCharacters[_currentCharacter].HealthCurrent = Validation.CheckIfValidInt(tbxStatsSetHealth.Text.ToString());
                 FormController.TbxClear(this, "tbxStatsSet");
                 lblStatsValueHealth.Visible = true;
                 btnStatsSetHealth.Visible = false;

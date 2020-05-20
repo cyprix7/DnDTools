@@ -107,7 +107,7 @@
 			this.tabInitTracker = new System.Windows.Forms.TabPage();
 			this.lblTrackerTitle = new System.Windows.Forms.Label();
 			this.rtbMessages = new System.Windows.Forms.RichTextBox();
-			this.lblControlInfo = new System.Windows.Forms.Label();
+			this.lblInfoLabel = new System.Windows.Forms.Label();
 			this.tabControl.SuspendLayout();
 			this.tabStats.SuspendLayout();
 			this.tabInitTracker.SuspendLayout();
@@ -830,18 +830,18 @@
 			this.lblStatsValueDeathSavesFailures.AutoSize = true;
 			this.lblStatsValueDeathSavesFailures.Location = new System.Drawing.Point(380, 114);
 			this.lblStatsValueDeathSavesFailures.Name = "lblStatsValueDeathSavesFailures";
-			this.lblStatsValueDeathSavesFailures.Size = new System.Drawing.Size(23, 13);
+			this.lblStatsValueDeathSavesFailures.Size = new System.Drawing.Size(30, 13);
 			this.lblStatsValueDeathSavesFailures.TabIndex = 13;
-			this.lblStatsValueDeathSavesFailures.Text = "null";
+			this.lblStatsValueDeathSavesFailures.Text = "0 / 0";
 			// 
 			// lblStatsValueDeathSavesSuccesses
 			// 
 			this.lblStatsValueDeathSavesSuccesses.AutoSize = true;
 			this.lblStatsValueDeathSavesSuccesses.Location = new System.Drawing.Point(380, 90);
 			this.lblStatsValueDeathSavesSuccesses.Name = "lblStatsValueDeathSavesSuccesses";
-			this.lblStatsValueDeathSavesSuccesses.Size = new System.Drawing.Size(23, 13);
+			this.lblStatsValueDeathSavesSuccesses.Size = new System.Drawing.Size(30, 13);
 			this.lblStatsValueDeathSavesSuccesses.TabIndex = 12;
-			this.lblStatsValueDeathSavesSuccesses.Text = "null";
+			this.lblStatsValueDeathSavesSuccesses.Text = "0 / 0";
 			// 
 			// lblStatsLabelDeathSavesFailures
 			// 
@@ -977,22 +977,22 @@
 			this.rtbMessages.TabIndex = 1;
 			this.rtbMessages.Text = "";
 			// 
-			// lblControlInfo
+			// lblInfoLabel
 			// 
-			this.lblControlInfo.AutoSize = true;
-			this.lblControlInfo.Location = new System.Drawing.Point(13, 457);
-			this.lblControlInfo.Name = "lblControlInfo";
-			this.lblControlInfo.Size = new System.Drawing.Size(35, 13);
-			this.lblControlInfo.TabIndex = 2;
-			this.lblControlInfo.Text = "label1";
-			this.lblControlInfo.Visible = false;
+			this.lblInfoLabel.AutoSize = true;
+			this.lblInfoLabel.Location = new System.Drawing.Point(13, 457);
+			this.lblInfoLabel.Name = "lblInfoLabel";
+			this.lblInfoLabel.Size = new System.Drawing.Size(35, 13);
+			this.lblInfoLabel.TabIndex = 2;
+			this.lblInfoLabel.Text = "label1";
+			this.lblInfoLabel.Visible = false;
 			// 
 			// FormMain
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(458, 479);
-			this.Controls.Add(this.lblControlInfo);
+			this.Controls.Add(this.lblInfoLabel);
 			this.Controls.Add(this.rtbMessages);
 			this.Controls.Add(this.tabControl);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -1022,7 +1022,7 @@
         private System.Windows.Forms.Label lblStatsValueRations;
         private System.Windows.Forms.Label lblStatsValueHealth;
         private System.Windows.Forms.RichTextBox rtbMessages;
-        private System.Windows.Forms.Label lblControlInfo;
+        private System.Windows.Forms.Label lblInfoLabel;
         private System.Windows.Forms.Label lblStatsValueStatus;
         private System.Windows.Forms.Label lblStatsValueDeathSavesFailures;
         private System.Windows.Forms.Label lblStatsValueDeathSavesSuccesses;

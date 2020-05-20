@@ -27,19 +27,19 @@ namespace DnDTools
             if (tbxName.Text != "" && tbxHealth.Text != "")
             {
                 partyCharacter.Name = tbxName.Text;
-                partyCharacter.Health = Validation.CheckIfValidInt(tbxHealth.Text);
+                partyCharacter.HealthCurrent = Validation.CheckIfValidInt(tbxHealth.Text);
                 partyCharacter.Rations = Validation.CheckIfValidDouble(tbxRations.Text);
                 partyCharacter.Gold = Validation.CheckIfValidInt(tbxGold.Text);
 
-                partyCharacter.SpellSlots1stLevel = Validation.CheckIfValidInt(tbxSpellSlot1stLevel.Text);
-                partyCharacter.SpellSlots2ndLevel = Validation.CheckIfValidInt(tbxSpellSlot2ndLevel.Text);
-                partyCharacter.SpellSlots3rdLevel = Validation.CheckIfValidInt(tbxSpellSlot3rdLevel.Text);
-                partyCharacter.SpellSlots4thLevel = Validation.CheckIfValidInt(tbxSpellSlot4thLevel.Text);
-                partyCharacter.SpellSlots5thLevel = Validation.CheckIfValidInt(tbxSpellSlot5thLevel.Text);
-                partyCharacter.SpellSlots6thLevel = Validation.CheckIfValidInt(tbxSpellSlot6thLevel.Text);
-                partyCharacter.SpellSlots7thLevel = Validation.CheckIfValidInt(tbxSpellSlot7thLevel.Text);
-                partyCharacter.SpellSlots8thLevel = Validation.CheckIfValidInt(tbxSpellSlot8thLevel.Text);
-                partyCharacter.SpellSlots9thLevel = Validation.CheckIfValidInt(tbxSpellSlot9thLevel.Text);
+                partyCharacter.SpellSlots1stLevelCurrent = Validation.CheckIfValidInt(tbxSpellSlot1stLevel.Text);
+                partyCharacter.SpellSlots2ndLevelCurrent = Validation.CheckIfValidInt(tbxSpellSlot2ndLevel.Text);
+                partyCharacter.SpellSlots3rdLevelCurrent = Validation.CheckIfValidInt(tbxSpellSlot3rdLevel.Text);
+                partyCharacter.SpellSlots4thLevelCurrent = Validation.CheckIfValidInt(tbxSpellSlot4thLevel.Text);
+                partyCharacter.SpellSlots5thLevelCurrent = Validation.CheckIfValidInt(tbxSpellSlot5thLevel.Text);
+                partyCharacter.SpellSlots6thLevelCurrent = Validation.CheckIfValidInt(tbxSpellSlot6thLevel.Text);
+                partyCharacter.SpellSlots7thLevelCurrent = Validation.CheckIfValidInt(tbxSpellSlot7thLevel.Text);
+                partyCharacter.SpellSlots8thLevelCurrent = Validation.CheckIfValidInt(tbxSpellSlot8thLevel.Text);
+                partyCharacter.SpellSlots9thLevelCurrent = Validation.CheckIfValidInt(tbxSpellSlot9thLevel.Text);
 
                 FormMain.DataStorage.CreatePartyCharacter(partyCharacter);
 

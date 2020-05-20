@@ -1,25 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DnDTools.Models
+﻿namespace DnDTools.Models
 {
     public class CharacterParty : Character
     {
         public double Rations { get; set; }
         public int Gold { get; set; }
 
-        public int SpellSlots1stLevel { get; set; }
-        public int SpellSlots2ndLevel { get; set; }
-        public int SpellSlots3rdLevel { get; set; }
-        public int SpellSlots4thLevel { get; set; }
-        public int SpellSlots5thLevel { get; set; }
-        public int SpellSlots6thLevel { get; set; }
-        public int SpellSlots7thLevel { get; set; }
-        public int SpellSlots8thLevel { get; set; }
-        public int SpellSlots9thLevel { get; set; }
+        public int SpellSlots1stLevelCurrent { get; set; }
+        public int SpellSlots2ndLevelCurrent { get; set; }
+        public int SpellSlots3rdLevelCurrent { get; set; }
+        public int SpellSlots4thLevelCurrent { get; set; }
+        public int SpellSlots5thLevelCurrent { get; set; }
+        public int SpellSlots6thLevelCurrent { get; set; }
+        public int SpellSlots7thLevelCurrent { get; set; }
+        public int SpellSlots8thLevelCurrent { get; set; }
+        public int SpellSlots9thLevelCurrent { get; set; }
+
+        public int SpellSlots1stLevelMaximum { get; set; }
+        public int SpellSlots2ndLevelMaximum { get; set; }
+        public int SpellSlots3rdLevelMaximum { get; set; }
+        public int SpellSlots4thLevelMaximum { get; set; }
+        public int SpellSlots5thLevelMaximum { get; set; }
+        public int SpellSlots6thLevelMaximum { get; set; }
+        public int SpellSlots7thLevelMaximum { get; set; }
+        public int SpellSlots8thLevelMaximum { get; set; }
+        public int SpellSlots9thLevelMaximum { get; set; } 
 
         public int DeathSavingThrowSuccess { get; set; }
         public int DeathSavingThrowFailure { get; set; }
