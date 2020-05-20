@@ -480,7 +480,7 @@
 			// 
 			// btnStatsDeathSavesResetFailure
 			// 
-			this.btnStatsDeathSavesResetFailure.Location = new System.Drawing.Point(210, 109);
+			this.btnStatsDeathSavesResetFailure.Location = new System.Drawing.Point(210, 97);
 			this.btnStatsDeathSavesResetFailure.Name = "btnStatsDeathSavesResetFailure";
 			this.btnStatsDeathSavesResetFailure.Size = new System.Drawing.Size(49, 23);
 			this.btnStatsDeathSavesResetFailure.TabIndex = 48;
@@ -490,7 +490,7 @@
 			// 
 			// btnStatsDeathSavesResetSuccess
 			// 
-			this.btnStatsDeathSavesResetSuccess.Location = new System.Drawing.Point(210, 85);
+			this.btnStatsDeathSavesResetSuccess.Location = new System.Drawing.Point(210, 73);
 			this.btnStatsDeathSavesResetSuccess.Name = "btnStatsDeathSavesResetSuccess";
 			this.btnStatsDeathSavesResetSuccess.Size = new System.Drawing.Size(49, 23);
 			this.btnStatsDeathSavesResetSuccess.TabIndex = 47;
@@ -500,7 +500,7 @@
 			// 
 			// btnStatsDeathSavesAddFailure
 			// 
-			this.btnStatsDeathSavesAddFailure.Location = new System.Drawing.Point(265, 109);
+			this.btnStatsDeathSavesAddFailure.Location = new System.Drawing.Point(265, 97);
 			this.btnStatsDeathSavesAddFailure.Name = "btnStatsDeathSavesAddFailure";
 			this.btnStatsDeathSavesAddFailure.Size = new System.Drawing.Size(40, 23);
 			this.btnStatsDeathSavesAddFailure.TabIndex = 46;
@@ -510,7 +510,7 @@
 			// 
 			// btnStatsDeathSavesAddSuccess
 			// 
-			this.btnStatsDeathSavesAddSuccess.Location = new System.Drawing.Point(265, 85);
+			this.btnStatsDeathSavesAddSuccess.Location = new System.Drawing.Point(265, 73);
 			this.btnStatsDeathSavesAddSuccess.Name = "btnStatsDeathSavesAddSuccess";
 			this.btnStatsDeathSavesAddSuccess.Size = new System.Drawing.Size(40, 23);
 			this.btnStatsDeathSavesAddSuccess.TabIndex = 45;
@@ -828,7 +828,7 @@
 			// lblStatsValueDeathSavesFailures
 			// 
 			this.lblStatsValueDeathSavesFailures.AutoSize = true;
-			this.lblStatsValueDeathSavesFailures.Location = new System.Drawing.Point(380, 114);
+			this.lblStatsValueDeathSavesFailures.Location = new System.Drawing.Point(380, 102);
 			this.lblStatsValueDeathSavesFailures.Name = "lblStatsValueDeathSavesFailures";
 			this.lblStatsValueDeathSavesFailures.Size = new System.Drawing.Size(30, 13);
 			this.lblStatsValueDeathSavesFailures.TabIndex = 13;
@@ -837,7 +837,7 @@
 			// lblStatsValueDeathSavesSuccesses
 			// 
 			this.lblStatsValueDeathSavesSuccesses.AutoSize = true;
-			this.lblStatsValueDeathSavesSuccesses.Location = new System.Drawing.Point(380, 90);
+			this.lblStatsValueDeathSavesSuccesses.Location = new System.Drawing.Point(380, 78);
 			this.lblStatsValueDeathSavesSuccesses.Name = "lblStatsValueDeathSavesSuccesses";
 			this.lblStatsValueDeathSavesSuccesses.Size = new System.Drawing.Size(30, 13);
 			this.lblStatsValueDeathSavesSuccesses.TabIndex = 12;
@@ -846,7 +846,7 @@
 			// lblStatsLabelDeathSavesFailures
 			// 
 			this.lblStatsLabelDeathSavesFailures.AutoSize = true;
-			this.lblStatsLabelDeathSavesFailures.Location = new System.Drawing.Point(327, 114);
+			this.lblStatsLabelDeathSavesFailures.Location = new System.Drawing.Point(327, 102);
 			this.lblStatsLabelDeathSavesFailures.Name = "lblStatsLabelDeathSavesFailures";
 			this.lblStatsLabelDeathSavesFailures.Size = new System.Drawing.Size(46, 13);
 			this.lblStatsLabelDeathSavesFailures.TabIndex = 11;
@@ -855,7 +855,7 @@
 			// lblStatsLabelDeathSavesSuccesses
 			// 
 			this.lblStatsLabelDeathSavesSuccesses.AutoSize = true;
-			this.lblStatsLabelDeathSavesSuccesses.Location = new System.Drawing.Point(311, 90);
+			this.lblStatsLabelDeathSavesSuccesses.Location = new System.Drawing.Point(311, 78);
 			this.lblStatsLabelDeathSavesSuccesses.Name = "lblStatsLabelDeathSavesSuccesses";
 			this.lblStatsLabelDeathSavesSuccesses.Size = new System.Drawing.Size(62, 13);
 			this.lblStatsLabelDeathSavesSuccesses.TabIndex = 10;
