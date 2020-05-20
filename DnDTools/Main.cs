@@ -34,7 +34,7 @@ namespace DnDTools
         }
 
         // FORM FUNCTIONS //
-
+        #region
         private void RefreshComboBox()
         {
             cbxStatsSelectCharacter.Items.Clear();
@@ -79,9 +79,14 @@ namespace DnDTools
             lblStatsValueSpellSlot9thLevel.Text = character.SpellSlots9thLevel.ToString();
         }
 
-        // EVENTS //
+		#endregion
 
-        private void cbxSelectPartyCharacter_SelectionChangeCommitted(object sender, EventArgs e)
+		// EVENTS - STATS //
+		#region
+        
+        // Character selection
+		#region
+		private void cbxSelectPartyCharacter_SelectionChangeCommitted(object sender, EventArgs e)
         {
             _currentCharacter = cbxStatsSelectCharacter.SelectedIndex;
             RefreshStats(_currentCharacter);
@@ -119,7 +124,11 @@ namespace DnDTools
             RefreshStats(_currentCharacter);
         }
 
-        private void lblValueStatus_Click(object sender, EventArgs e)
+		#endregion
+
+		// General stats
+		#region
+		private void lblValueStatus_Click(object sender, EventArgs e)
         {
             cbxStatsSetStatus.Items.Clear();
             foreach (var en in Enum.GetValues(typeof(Character.StatusTypes)))
@@ -188,7 +197,11 @@ namespace DnDTools
             }
         }
 
-        private void btnStatsDeathSavesAddSuccess_Click(object sender, EventArgs e)
+		#endregion
+
+		// Death saves
+		#region
+		private void btnStatsDeathSavesAddSuccess_Click(object sender, EventArgs e)
         {
             if (DataStorage.PartyCharacters[_currentCharacter].DeathSavingThrowSuccess < 3)
             {
@@ -218,7 +231,11 @@ namespace DnDTools
             RefreshStats(_currentCharacter);
         }
 
-        private void lblStatsValueSpellSlot1stLevel_Click(object sender, EventArgs e)
+		#endregion
+
+		// Spell slots
+		#region
+		private void lblStatsValueSpellSlot1stLevel_Click(object sender, EventArgs e)
         {
 
         }
@@ -352,5 +369,9 @@ namespace DnDTools
         {
 
         }
-    }    
+
+		#endregion
+
+		#endregion
+	}
 }
