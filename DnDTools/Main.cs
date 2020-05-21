@@ -68,15 +68,28 @@ namespace DnDTools
             lblStatsValueDeathSavesFailures.Text = $"{character.DeathSavingThrowFailure} / 3";
 
             // Spell Slots
-            lblStatsValueSpellSlot1stLevel.Text = character.SpellSlots1stLevelCurrent.ToString();
-            lblStatsValueSpellSlot2ndLevel.Text = character.SpellSlots2ndLevelCurrent.ToString();
-            lblStatsValueSpellSlot3rdLevel.Text = character.SpellSlots3rdLevelCurrent.ToString();
-            lblStatsValueSpellSlot4thLevel.Text = character.SpellSlots4thLevelCurrent.ToString();
-            lblStatsValueSpellSlot5thLevel.Text = character.SpellSlots5thLevelCurrent.ToString();
-            lblStatsValueSpellSlot6thLevel.Text = character.SpellSlots6thLevelCurrent.ToString();
-            lblStatsValueSpellSlot7thLevel.Text = character.SpellSlots7thLevelCurrent.ToString();
-            lblStatsValueSpellSlot8thLevel.Text = character.SpellSlots8thLevelCurrent.ToString();
-            lblStatsValueSpellSlot9thLevel.Text = character.SpellSlots9thLevelCurrent.ToString();
+            lblStatsValueSpellSlot1stLevel.Text = $"{character.SpellSlots1stLevelCurrent} / {character.SpellSlots1stLevelMaximum}";
+            lblStatsValueSpellSlot2ndLevel.Text = $"{character.SpellSlots2ndLevelCurrent} / {character.SpellSlots2ndLevelMaximum}";
+            lblStatsValueSpellSlot3rdLevel.Text = $"{character.SpellSlots3rdLevelCurrent} / {character.SpellSlots3rdLevelMaximum}";
+            lblStatsValueSpellSlot4thLevel.Text = $"{character.SpellSlots4thLevelCurrent} / {character.SpellSlots4thLevelMaximum}";
+            lblStatsValueSpellSlot5thLevel.Text = $"{character.SpellSlots5thLevelCurrent} / {character.SpellSlots5thLevelMaximum}";
+            lblStatsValueSpellSlot6thLevel.Text = $"{character.SpellSlots6thLevelCurrent} / {character.SpellSlots6thLevelMaximum}";
+            lblStatsValueSpellSlot7thLevel.Text = $"{character.SpellSlots7thLevelCurrent} / {character.SpellSlots7thLevelMaximum}";
+            lblStatsValueSpellSlot8thLevel.Text = $"{character.SpellSlots8thLevelCurrent} / {character.SpellSlots8thLevelMaximum}";
+            lblStatsValueSpellSlot9thLevel.Text = $"{character.SpellSlots9thLevelCurrent} / {character.SpellSlots9thLevelMaximum}";
+        }
+
+        private void ClickLabel(Label lbl, Button btn, TextBox tbx)
+        {
+            FormController.LblMakeVisible(this, true, "lblStatsValue");
+            FormController.TbxMakeVisible(this, false, "tbxStatsSet");
+            FormController.BtnMakeVisible(this, false, "btnStatsSet");
+
+            lbl.Visible = false;
+            btn.Visible = false;
+            tbx.Visible = true;
+            tbx.Focus();
+            AcceptButton = btn;
         }
 
 		#endregion
@@ -142,10 +155,10 @@ namespace DnDTools
 
         private void lblValueHealth_Click(object sender, EventArgs e)
         {
-            FormController.LblHide(this, true, "lblStatsValue");
+            FormController.LblMakeVisible(this, true, "lblStatsValue");
             lblStatsValueHealth.Visible = false;
-            FormController.TbxHide(this, false, "tbxStatsSet");
-            FormController.BtnHide(this, false, "btnStatsSet");
+            FormController.TbxMakeVisible(this, false, "tbxStatsSet");
+            FormController.BtnMakeVisible(this, false, "btnStatsSet");
             tbxStatsSetHealth.Visible = true;
             btnStatsSetHealth.Visible = true;
             tbxStatsSetHealth.Text = DataStorage.PartyCharacters[_currentCharacter].HealthCurrent.ToString();
@@ -154,10 +167,10 @@ namespace DnDTools
 
         private void lblValueRations_Click(object sender, EventArgs e)
         {
-            FormController.LblHide(this, true, "lblStatsValue");
+            FormController.LblMakeVisible(this, true, "lblStatsValue");
             lblStatsValueRations.Visible = false;
-            FormController.TbxHide(this, false, "tbxStatsSet");
-            FormController.BtnHide(this, false, "btnStatsSet");
+            FormController.TbxMakeVisible(this, false, "tbxStatsSet");
+            FormController.BtnMakeVisible(this, false, "btnStatsSet");
             tbxStatsSetRations.Visible = true;
             btnStatsSetRations.Visible = true;
             tbxStatsSetRations.Text = DataStorage.PartyCharacters[_currentCharacter].Rations.ToString();
@@ -166,10 +179,10 @@ namespace DnDTools
 
         private void lblValueGold_Click(object sender, EventArgs e)
         {
-            FormController.LblHide(this, true, "lblStatsValue");
+            FormController.LblMakeVisible(this, true, "lblStatsValue");
             lblStatsValueGold.Visible = false;
-            FormController.TbxHide(this, false, "tbxStatsSet");
-            FormController.BtnHide(this, false, "btnStatsSet");
+            FormController.TbxMakeVisible(this, false, "tbxStatsSet");
+            FormController.BtnMakeVisible(this, false, "btnStatsSet");
             tbxStatsSetGold.Visible = true;
             btnStatsSetGold.Visible = true;
             tbxStatsSetGold.Text = DataStorage.PartyCharacters[_currentCharacter].Gold.ToString();
@@ -255,12 +268,21 @@ namespace DnDTools
 		#region Spell slots
 		private void lblStatsValueSpellSlot1stLevel_Click(object sender, EventArgs e)
         {
-
+            FormController.LblMakeVisible(this, true, "lblStatsValue");
+            FormController.TbxMakeVisible(this, false, "tbxStatsSet");
+            FormController.BtnMakeVisible(this, false, "btnStatsSet");
+            lblStatsValueSpellSlot1stLevel.Visible = false;
+            btnStatsCastSpellSlots1stLevel.Visible = false;
+            btnStatsSetSpellSlots1stLevel.Visible = true;
+            tbxStatsSetSpellSlot1stLevel.Visible = true;
+            tbxStatsSetSpellSlot1stLevel.Text = DataStorage.PartyCharacters[_currentCharacter].SpellSlots1stLevelCurrent.ToString();
+            tbxStatsSetSpellSlot1stLevel.Focus();
+            AcceptButton = btnStatsSetSpellSlots1stLevel;
         }
 
         private void lblStatsValueSpellSlot2ndLevel_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void lblStatsValueSpellSlot3rdLevel_Click(object sender, EventArgs e)
@@ -300,7 +322,25 @@ namespace DnDTools
 
         private void btnStatsSetSpellSlots1stLevel_Click(object sender, EventArgs e)
         {
-
+            if (Validation.CheckIfValidInt(tbxStatsSetSpellSlot1stLevel.Text.ToString()) <= DataStorage.PartyCharacters[_currentCharacter].SpellSlots1stLevelMaximum 
+                && Validation.CheckIfValidInt(tbxStatsSetSpellSlot1stLevel.Text.ToString()) >= 0)
+            {
+                DataStorage.PartyCharacters[_currentCharacter].SpellSlots1stLevelCurrent = Validation.CheckIfValidInt(tbxStatsSetSpellSlot1stLevel.Text.ToString());
+            }
+            else if (Validation.CheckIfValidInt(tbxStatsSetSpellSlot1stLevel.Text.ToString()) > DataStorage.PartyCharacters[_currentCharacter].SpellSlots1stLevelMaximum)
+            {
+                DataStorage.PartyCharacters[_currentCharacter].SpellSlots1stLevelCurrent = DataStorage.PartyCharacters[_currentCharacter].SpellSlots1stLevelMaximum;
+            }
+            else
+            {
+                DataStorage.PartyCharacters[_currentCharacter].SpellSlots1stLevelCurrent = 0;
+            }
+            FormController.TbxClear(this, "tbxStatsSet");
+            lblStatsValueSpellSlot1stLevel.Visible = true;
+            btnStatsCastSpellSlots1stLevel.Visible = true;
+            btnStatsSetSpellSlots1stLevel.Visible = false;
+            tbxStatsSetSpellSlot1stLevel.Visible = false;
+            RefreshStats(_currentCharacter);
         }
 
         private void btnStatsSetSpellSlots2ndLevel_Click(object sender, EventArgs e)

@@ -78,7 +78,7 @@ namespace DnDTools
             }
         }
 
-        public static void TbxHide(Form form, bool isVisible = false, string tbxName = "")
+        public static void TbxMakeVisible(Form form, bool isVisible, string tbxName = "")
         {
             // Optional parameter clears specified tbx
             if (tbxName != "")
@@ -147,7 +147,7 @@ namespace DnDTools
             }
         }
 
-        public static void BtnHide(Form form, bool isVisible = false, string btnName = "")
+        public static void BtnMakeVisible(Form form, bool isVisible, string btnName = "")
         {
             // Optional parameter clears specified btn
             if (btnName != "")
@@ -216,7 +216,7 @@ namespace DnDTools
             }
         }
 
-        public static void LblHide(Form form, bool isVisible = false, string lblName = "")
+        public static void LblMakeVisible(Form form, bool isVisible, string lblName = "")
         {
             // Optional parameter clears specified lbl
             if (lblName != "")

@@ -46,8 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\RandomNumberGenerator.cs" />
-    <Compile Include="Controllers\Validation.cs" />
+    <Compile Include="Misc\RandomNumberGenerator.cs" />
+    <Compile Include="Misc\Validation.cs" />
     <Compile Include="Models\Character.cs" />
     <Compile Include="AddPartyCharacter.cs">
       <SubType>Form</SubType>
@@ -55,8 +55,8 @@
     <Compile Include="AddPartyCharacter.Designer.cs">
       <DependentUpon>AddPartyCharacter.cs</DependentUpon>
     </Compile>
-    <Compile Include="Data Storage\CharacterDataStorage.cs" />
-    <Compile Include="Controllers\FormController.cs" />
+    <Compile Include="Data\CharacterDataStorage.cs" />
+    <Compile Include="Misc\FormController.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>

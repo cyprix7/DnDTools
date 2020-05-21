@@ -30,15 +30,15 @@
         {
 			this.tabControl = new System.Windows.Forms.TabControl();
 			this.tabStats = new System.Windows.Forms.TabPage();
-			this.btnStatsSpellSlotsCast9thLevel = new System.Windows.Forms.Button();
-			this.btnStatsSpellSlotsCast8thLevel = new System.Windows.Forms.Button();
-			this.btnStatsSpellSlotsCast7thLevel = new System.Windows.Forms.Button();
-			this.btnStatsSpellSlotsCast6thLevel = new System.Windows.Forms.Button();
-			this.btnStatsSpellSlotsCast5thLevel = new System.Windows.Forms.Button();
-			this.btnStatsSpellSlotsCast4thLevel = new System.Windows.Forms.Button();
-			this.btnStatsSpellSlotsCast3rdLevel = new System.Windows.Forms.Button();
-			this.btnStatsSpellSlotsCast2ndLevel = new System.Windows.Forms.Button();
-			this.btnStatsSpellSlotsCast1stLevel = new System.Windows.Forms.Button();
+			this.btnStatsCastSpellSlots9thLevel = new System.Windows.Forms.Button();
+			this.btnStatsCastSpellSlots8thLevel = new System.Windows.Forms.Button();
+			this.btnStatsCastSpellSlots7thLevel = new System.Windows.Forms.Button();
+			this.btnStatsCastSpellSlots6thLevel = new System.Windows.Forms.Button();
+			this.btnStatsCastSpellSlots5thLevel = new System.Windows.Forms.Button();
+			this.btnStatsCastSpellSlots4thLevel = new System.Windows.Forms.Button();
+			this.btnStatsCastSpellSlots3rdLevel = new System.Windows.Forms.Button();
+			this.btnStatsCastSpellSlots2ndLevel = new System.Windows.Forms.Button();
+			this.btnStatsCastSpellSlots1stLevel = new System.Windows.Forms.Button();
 			this.btnStatsSetSpellSlots9thLevel = new System.Windows.Forms.Button();
 			this.btnStatsSetSpellSlots6thLevel = new System.Windows.Forms.Button();
 			this.btnStatsSetSpellSlots3rdLevel = new System.Windows.Forms.Button();
@@ -53,10 +53,10 @@
 			this.textBox9 = new System.Windows.Forms.TextBox();
 			this.textBox4 = new System.Windows.Forms.TextBox();
 			this.textBox5 = new System.Windows.Forms.TextBox();
-			this.textBox6 = new System.Windows.Forms.TextBox();
-			this.textBox3 = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.tbxStatsSetSpellSlot4thLevel = new System.Windows.Forms.TextBox();
+			this.tbxStatsSetSpellSlot3rdLevel = new System.Windows.Forms.TextBox();
+			this.tbxStatsSetSpellSlot2ndLevel = new System.Windows.Forms.TextBox();
+			this.tbxStatsSetSpellSlot1stLevel = new System.Windows.Forms.TextBox();
 			this.lblStatsTitle = new System.Windows.Forms.Label();
 			this.btnStatsDeathSavesResetFailure = new System.Windows.Forms.Button();
 			this.btnStatsDeathSavesResetSuccess = new System.Windows.Forms.Button();
@@ -120,20 +120,20 @@
 			this.tabControl.Location = new System.Drawing.Point(12, 12);
 			this.tabControl.Name = "tabControl";
 			this.tabControl.SelectedIndex = 0;
-			this.tabControl.Size = new System.Drawing.Size(435, 355);
+			this.tabControl.Size = new System.Drawing.Size(463, 355);
 			this.tabControl.TabIndex = 0;
 			// 
 			// tabStats
 			// 
-			this.tabStats.Controls.Add(this.btnStatsSpellSlotsCast9thLevel);
-			this.tabStats.Controls.Add(this.btnStatsSpellSlotsCast8thLevel);
-			this.tabStats.Controls.Add(this.btnStatsSpellSlotsCast7thLevel);
-			this.tabStats.Controls.Add(this.btnStatsSpellSlotsCast6thLevel);
-			this.tabStats.Controls.Add(this.btnStatsSpellSlotsCast5thLevel);
-			this.tabStats.Controls.Add(this.btnStatsSpellSlotsCast4thLevel);
-			this.tabStats.Controls.Add(this.btnStatsSpellSlotsCast3rdLevel);
-			this.tabStats.Controls.Add(this.btnStatsSpellSlotsCast2ndLevel);
-			this.tabStats.Controls.Add(this.btnStatsSpellSlotsCast1stLevel);
+			this.tabStats.Controls.Add(this.btnStatsCastSpellSlots9thLevel);
+			this.tabStats.Controls.Add(this.btnStatsCastSpellSlots8thLevel);
+			this.tabStats.Controls.Add(this.btnStatsCastSpellSlots7thLevel);
+			this.tabStats.Controls.Add(this.btnStatsCastSpellSlots6thLevel);
+			this.tabStats.Controls.Add(this.btnStatsCastSpellSlots5thLevel);
+			this.tabStats.Controls.Add(this.btnStatsCastSpellSlots4thLevel);
+			this.tabStats.Controls.Add(this.btnStatsCastSpellSlots3rdLevel);
+			this.tabStats.Controls.Add(this.btnStatsCastSpellSlots2ndLevel);
+			this.tabStats.Controls.Add(this.btnStatsCastSpellSlots1stLevel);
 			this.tabStats.Controls.Add(this.btnStatsSetSpellSlots9thLevel);
 			this.tabStats.Controls.Add(this.btnStatsSetSpellSlots6thLevel);
 			this.tabStats.Controls.Add(this.btnStatsSetSpellSlots3rdLevel);
@@ -148,10 +148,10 @@
 			this.tabStats.Controls.Add(this.textBox9);
 			this.tabStats.Controls.Add(this.textBox4);
 			this.tabStats.Controls.Add(this.textBox5);
-			this.tabStats.Controls.Add(this.textBox6);
-			this.tabStats.Controls.Add(this.textBox3);
-			this.tabStats.Controls.Add(this.textBox2);
-			this.tabStats.Controls.Add(this.textBox1);
+			this.tabStats.Controls.Add(this.tbxStatsSetSpellSlot4thLevel);
+			this.tabStats.Controls.Add(this.tbxStatsSetSpellSlot3rdLevel);
+			this.tabStats.Controls.Add(this.tbxStatsSetSpellSlot2ndLevel);
+			this.tabStats.Controls.Add(this.tbxStatsSetSpellSlot1stLevel);
 			this.tabStats.Controls.Add(this.lblStatsTitle);
 			this.tabStats.Controls.Add(this.btnStatsDeathSavesResetFailure);
 			this.tabStats.Controls.Add(this.btnStatsDeathSavesResetSuccess);
@@ -202,104 +202,104 @@
 			this.tabStats.Location = new System.Drawing.Point(4, 22);
 			this.tabStats.Name = "tabStats";
 			this.tabStats.Padding = new System.Windows.Forms.Padding(3);
-			this.tabStats.Size = new System.Drawing.Size(427, 329);
+			this.tabStats.Size = new System.Drawing.Size(455, 329);
 			this.tabStats.TabIndex = 0;
 			this.tabStats.Text = "Stats";
 			this.tabStats.UseVisualStyleBackColor = true;
 			// 
-			// btnStatsSpellSlotsCast9thLevel
+			// btnStatsCastSpellSlots9thLevel
 			// 
-			this.btnStatsSpellSlotsCast9thLevel.Location = new System.Drawing.Point(370, 294);
-			this.btnStatsSpellSlotsCast9thLevel.Name = "btnStatsSpellSlotsCast9thLevel";
-			this.btnStatsSpellSlotsCast9thLevel.Size = new System.Drawing.Size(45, 23);
-			this.btnStatsSpellSlotsCast9thLevel.TabIndex = 76;
-			this.btnStatsSpellSlotsCast9thLevel.Text = "Cast";
-			this.btnStatsSpellSlotsCast9thLevel.UseVisualStyleBackColor = true;
-			this.btnStatsSpellSlotsCast9thLevel.Click += new System.EventHandler(this.btnStatsSpellSlotsCast9thLevel_Click);
+			this.btnStatsCastSpellSlots9thLevel.Location = new System.Drawing.Point(381, 294);
+			this.btnStatsCastSpellSlots9thLevel.Name = "btnStatsCastSpellSlots9thLevel";
+			this.btnStatsCastSpellSlots9thLevel.Size = new System.Drawing.Size(45, 23);
+			this.btnStatsCastSpellSlots9thLevel.TabIndex = 76;
+			this.btnStatsCastSpellSlots9thLevel.Text = "Cast";
+			this.btnStatsCastSpellSlots9thLevel.UseVisualStyleBackColor = true;
+			this.btnStatsCastSpellSlots9thLevel.Click += new System.EventHandler(this.btnStatsSpellSlotsCast9thLevel_Click);
 			// 
-			// btnStatsSpellSlotsCast8thLevel
+			// btnStatsCastSpellSlots8thLevel
 			// 
-			this.btnStatsSpellSlotsCast8thLevel.Location = new System.Drawing.Point(370, 241);
-			this.btnStatsSpellSlotsCast8thLevel.Name = "btnStatsSpellSlotsCast8thLevel";
-			this.btnStatsSpellSlotsCast8thLevel.Size = new System.Drawing.Size(45, 23);
-			this.btnStatsSpellSlotsCast8thLevel.TabIndex = 75;
-			this.btnStatsSpellSlotsCast8thLevel.Text = "Cast";
-			this.btnStatsSpellSlotsCast8thLevel.UseVisualStyleBackColor = true;
-			this.btnStatsSpellSlotsCast8thLevel.Click += new System.EventHandler(this.btnStatsSpellSlotsCast8thLevel_Click);
+			this.btnStatsCastSpellSlots8thLevel.Location = new System.Drawing.Point(381, 241);
+			this.btnStatsCastSpellSlots8thLevel.Name = "btnStatsCastSpellSlots8thLevel";
+			this.btnStatsCastSpellSlots8thLevel.Size = new System.Drawing.Size(45, 23);
+			this.btnStatsCastSpellSlots8thLevel.TabIndex = 75;
+			this.btnStatsCastSpellSlots8thLevel.Text = "Cast";
+			this.btnStatsCastSpellSlots8thLevel.UseVisualStyleBackColor = true;
+			this.btnStatsCastSpellSlots8thLevel.Click += new System.EventHandler(this.btnStatsSpellSlotsCast8thLevel_Click);
 			// 
-			// btnStatsSpellSlotsCast7thLevel
+			// btnStatsCastSpellSlots7thLevel
 			// 
-			this.btnStatsSpellSlotsCast7thLevel.Location = new System.Drawing.Point(368, 193);
-			this.btnStatsSpellSlotsCast7thLevel.Name = "btnStatsSpellSlotsCast7thLevel";
-			this.btnStatsSpellSlotsCast7thLevel.Size = new System.Drawing.Size(45, 23);
-			this.btnStatsSpellSlotsCast7thLevel.TabIndex = 74;
-			this.btnStatsSpellSlotsCast7thLevel.Text = "Cast";
-			this.btnStatsSpellSlotsCast7thLevel.UseVisualStyleBackColor = true;
-			this.btnStatsSpellSlotsCast7thLevel.Click += new System.EventHandler(this.btnStatsSpellSlotsCast7thLevel_Click);
+			this.btnStatsCastSpellSlots7thLevel.Location = new System.Drawing.Point(379, 193);
+			this.btnStatsCastSpellSlots7thLevel.Name = "btnStatsCastSpellSlots7thLevel";
+			this.btnStatsCastSpellSlots7thLevel.Size = new System.Drawing.Size(45, 23);
+			this.btnStatsCastSpellSlots7thLevel.TabIndex = 74;
+			this.btnStatsCastSpellSlots7thLevel.Text = "Cast";
+			this.btnStatsCastSpellSlots7thLevel.UseVisualStyleBackColor = true;
+			this.btnStatsCastSpellSlots7thLevel.Click += new System.EventHandler(this.btnStatsSpellSlotsCast7thLevel_Click);
 			// 
-			// btnStatsSpellSlotsCast6thLevel
+			// btnStatsCastSpellSlots6thLevel
 			// 
-			this.btnStatsSpellSlotsCast6thLevel.Location = new System.Drawing.Point(294, 294);
-			this.btnStatsSpellSlotsCast6thLevel.Name = "btnStatsSpellSlotsCast6thLevel";
-			this.btnStatsSpellSlotsCast6thLevel.Size = new System.Drawing.Size(45, 23);
-			this.btnStatsSpellSlotsCast6thLevel.TabIndex = 73;
-			this.btnStatsSpellSlotsCast6thLevel.Text = "Cast";
-			this.btnStatsSpellSlotsCast6thLevel.UseVisualStyleBackColor = true;
-			this.btnStatsSpellSlotsCast6thLevel.Click += new System.EventHandler(this.btnStatsSpellSlotsCast6thLevel_Click);
+			this.btnStatsCastSpellSlots6thLevel.Location = new System.Drawing.Point(281, 294);
+			this.btnStatsCastSpellSlots6thLevel.Name = "btnStatsCastSpellSlots6thLevel";
+			this.btnStatsCastSpellSlots6thLevel.Size = new System.Drawing.Size(45, 23);
+			this.btnStatsCastSpellSlots6thLevel.TabIndex = 73;
+			this.btnStatsCastSpellSlots6thLevel.Text = "Cast";
+			this.btnStatsCastSpellSlots6thLevel.UseVisualStyleBackColor = true;
+			this.btnStatsCastSpellSlots6thLevel.Click += new System.EventHandler(this.btnStatsSpellSlotsCast6thLevel_Click);
 			// 
-			// btnStatsSpellSlotsCast5thLevel
+			// btnStatsCastSpellSlots5thLevel
 			// 
-			this.btnStatsSpellSlotsCast5thLevel.Location = new System.Drawing.Point(294, 241);
-			this.btnStatsSpellSlotsCast5thLevel.Name = "btnStatsSpellSlotsCast5thLevel";
-			this.btnStatsSpellSlotsCast5thLevel.Size = new System.Drawing.Size(45, 23);
-			this.btnStatsSpellSlotsCast5thLevel.TabIndex = 72;
-			this.btnStatsSpellSlotsCast5thLevel.Text = "Cast";
-			this.btnStatsSpellSlotsCast5thLevel.UseVisualStyleBackColor = true;
-			this.btnStatsSpellSlotsCast5thLevel.Click += new System.EventHandler(this.btnStatsSpellSlotsCast5thLevel_Click);
+			this.btnStatsCastSpellSlots5thLevel.Location = new System.Drawing.Point(281, 241);
+			this.btnStatsCastSpellSlots5thLevel.Name = "btnStatsCastSpellSlots5thLevel";
+			this.btnStatsCastSpellSlots5thLevel.Size = new System.Drawing.Size(45, 23);
+			this.btnStatsCastSpellSlots5thLevel.TabIndex = 72;
+			this.btnStatsCastSpellSlots5thLevel.Text = "Cast";
+			this.btnStatsCastSpellSlots5thLevel.UseVisualStyleBackColor = true;
+			this.btnStatsCastSpellSlots5thLevel.Click += new System.EventHandler(this.btnStatsSpellSlotsCast5thLevel_Click);
 			// 
-			// btnStatsSpellSlotsCast4thLevel
+			// btnStatsCastSpellSlots4thLevel
 			// 
-			this.btnStatsSpellSlotsCast4thLevel.Location = new System.Drawing.Point(294, 193);
-			this.btnStatsSpellSlotsCast4thLevel.Name = "btnStatsSpellSlotsCast4thLevel";
-			this.btnStatsSpellSlotsCast4thLevel.Size = new System.Drawing.Size(45, 23);
-			this.btnStatsSpellSlotsCast4thLevel.TabIndex = 71;
-			this.btnStatsSpellSlotsCast4thLevel.Text = "Cast";
-			this.btnStatsSpellSlotsCast4thLevel.UseVisualStyleBackColor = true;
-			this.btnStatsSpellSlotsCast4thLevel.Click += new System.EventHandler(this.btnStatsSpellSlotsCast4thLevel_Click);
+			this.btnStatsCastSpellSlots4thLevel.Location = new System.Drawing.Point(281, 193);
+			this.btnStatsCastSpellSlots4thLevel.Name = "btnStatsCastSpellSlots4thLevel";
+			this.btnStatsCastSpellSlots4thLevel.Size = new System.Drawing.Size(45, 23);
+			this.btnStatsCastSpellSlots4thLevel.TabIndex = 71;
+			this.btnStatsCastSpellSlots4thLevel.Text = "Cast";
+			this.btnStatsCastSpellSlots4thLevel.UseVisualStyleBackColor = true;
+			this.btnStatsCastSpellSlots4thLevel.Click += new System.EventHandler(this.btnStatsSpellSlotsCast4thLevel_Click);
 			// 
-			// btnStatsSpellSlotsCast3rdLevel
+			// btnStatsCastSpellSlots3rdLevel
 			// 
-			this.btnStatsSpellSlotsCast3rdLevel.Location = new System.Drawing.Point(221, 294);
-			this.btnStatsSpellSlotsCast3rdLevel.Name = "btnStatsSpellSlotsCast3rdLevel";
-			this.btnStatsSpellSlotsCast3rdLevel.Size = new System.Drawing.Size(45, 23);
-			this.btnStatsSpellSlotsCast3rdLevel.TabIndex = 70;
-			this.btnStatsSpellSlotsCast3rdLevel.Text = "Cast";
-			this.btnStatsSpellSlotsCast3rdLevel.UseVisualStyleBackColor = true;
-			this.btnStatsSpellSlotsCast3rdLevel.Click += new System.EventHandler(this.btnStatsSpellSlotsCast3rdLevel_Click);
+			this.btnStatsCastSpellSlots3rdLevel.Location = new System.Drawing.Point(185, 294);
+			this.btnStatsCastSpellSlots3rdLevel.Name = "btnStatsCastSpellSlots3rdLevel";
+			this.btnStatsCastSpellSlots3rdLevel.Size = new System.Drawing.Size(45, 23);
+			this.btnStatsCastSpellSlots3rdLevel.TabIndex = 70;
+			this.btnStatsCastSpellSlots3rdLevel.Text = "Cast";
+			this.btnStatsCastSpellSlots3rdLevel.UseVisualStyleBackColor = true;
+			this.btnStatsCastSpellSlots3rdLevel.Click += new System.EventHandler(this.btnStatsSpellSlotsCast3rdLevel_Click);
 			// 
-			// btnStatsSpellSlotsCast2ndLevel
+			// btnStatsCastSpellSlots2ndLevel
 			// 
-			this.btnStatsSpellSlotsCast2ndLevel.Location = new System.Drawing.Point(221, 241);
-			this.btnStatsSpellSlotsCast2ndLevel.Name = "btnStatsSpellSlotsCast2ndLevel";
-			this.btnStatsSpellSlotsCast2ndLevel.Size = new System.Drawing.Size(45, 23);
-			this.btnStatsSpellSlotsCast2ndLevel.TabIndex = 69;
-			this.btnStatsSpellSlotsCast2ndLevel.Text = "Cast";
-			this.btnStatsSpellSlotsCast2ndLevel.UseVisualStyleBackColor = true;
-			this.btnStatsSpellSlotsCast2ndLevel.Click += new System.EventHandler(this.btnStatsSpellSlotsCast2ndLevel_Click);
+			this.btnStatsCastSpellSlots2ndLevel.Location = new System.Drawing.Point(185, 241);
+			this.btnStatsCastSpellSlots2ndLevel.Name = "btnStatsCastSpellSlots2ndLevel";
+			this.btnStatsCastSpellSlots2ndLevel.Size = new System.Drawing.Size(45, 23);
+			this.btnStatsCastSpellSlots2ndLevel.TabIndex = 69;
+			this.btnStatsCastSpellSlots2ndLevel.Text = "Cast";
+			this.btnStatsCastSpellSlots2ndLevel.UseVisualStyleBackColor = true;
+			this.btnStatsCastSpellSlots2ndLevel.Click += new System.EventHandler(this.btnStatsSpellSlotsCast2ndLevel_Click);
 			// 
-			// btnStatsSpellSlotsCast1stLevel
+			// btnStatsCastSpellSlots1stLevel
 			// 
-			this.btnStatsSpellSlotsCast1stLevel.Location = new System.Drawing.Point(220, 193);
-			this.btnStatsSpellSlotsCast1stLevel.Name = "btnStatsSpellSlotsCast1stLevel";
-			this.btnStatsSpellSlotsCast1stLevel.Size = new System.Drawing.Size(45, 23);
-			this.btnStatsSpellSlotsCast1stLevel.TabIndex = 68;
-			this.btnStatsSpellSlotsCast1stLevel.Text = "Cast";
-			this.btnStatsSpellSlotsCast1stLevel.UseVisualStyleBackColor = true;
-			this.btnStatsSpellSlotsCast1stLevel.Click += new System.EventHandler(this.btnStatsSpellSlotsCast1stLevel_Click);
+			this.btnStatsCastSpellSlots1stLevel.Location = new System.Drawing.Point(184, 193);
+			this.btnStatsCastSpellSlots1stLevel.Name = "btnStatsCastSpellSlots1stLevel";
+			this.btnStatsCastSpellSlots1stLevel.Size = new System.Drawing.Size(45, 23);
+			this.btnStatsCastSpellSlots1stLevel.TabIndex = 68;
+			this.btnStatsCastSpellSlots1stLevel.Text = "Cast";
+			this.btnStatsCastSpellSlots1stLevel.UseVisualStyleBackColor = true;
+			this.btnStatsCastSpellSlots1stLevel.Click += new System.EventHandler(this.btnStatsSpellSlotsCast1stLevel_Click);
 			// 
 			// btnStatsSetSpellSlots9thLevel
 			// 
-			this.btnStatsSetSpellSlots9thLevel.Location = new System.Drawing.Point(370, 294);
+			this.btnStatsSetSpellSlots9thLevel.Location = new System.Drawing.Point(381, 294);
 			this.btnStatsSetSpellSlots9thLevel.Name = "btnStatsSetSpellSlots9thLevel";
 			this.btnStatsSetSpellSlots9thLevel.Size = new System.Drawing.Size(35, 23);
 			this.btnStatsSetSpellSlots9thLevel.TabIndex = 67;
@@ -310,7 +310,7 @@
 			// 
 			// btnStatsSetSpellSlots6thLevel
 			// 
-			this.btnStatsSetSpellSlots6thLevel.Location = new System.Drawing.Point(294, 294);
+			this.btnStatsSetSpellSlots6thLevel.Location = new System.Drawing.Point(281, 294);
 			this.btnStatsSetSpellSlots6thLevel.Name = "btnStatsSetSpellSlots6thLevel";
 			this.btnStatsSetSpellSlots6thLevel.Size = new System.Drawing.Size(35, 23);
 			this.btnStatsSetSpellSlots6thLevel.TabIndex = 66;
@@ -321,7 +321,7 @@
 			// 
 			// btnStatsSetSpellSlots3rdLevel
 			// 
-			this.btnStatsSetSpellSlots3rdLevel.Location = new System.Drawing.Point(220, 294);
+			this.btnStatsSetSpellSlots3rdLevel.Location = new System.Drawing.Point(184, 294);
 			this.btnStatsSetSpellSlots3rdLevel.Name = "btnStatsSetSpellSlots3rdLevel";
 			this.btnStatsSetSpellSlots3rdLevel.Size = new System.Drawing.Size(35, 23);
 			this.btnStatsSetSpellSlots3rdLevel.TabIndex = 65;
@@ -332,7 +332,7 @@
 			// 
 			// btnStatsSetSpellSlots8thLevel
 			// 
-			this.btnStatsSetSpellSlots8thLevel.Location = new System.Drawing.Point(370, 241);
+			this.btnStatsSetSpellSlots8thLevel.Location = new System.Drawing.Point(381, 241);
 			this.btnStatsSetSpellSlots8thLevel.Name = "btnStatsSetSpellSlots8thLevel";
 			this.btnStatsSetSpellSlots8thLevel.Size = new System.Drawing.Size(35, 23);
 			this.btnStatsSetSpellSlots8thLevel.TabIndex = 64;
@@ -343,7 +343,7 @@
 			// 
 			// btnStatsSetSpellSlots5thLevel
 			// 
-			this.btnStatsSetSpellSlots5thLevel.Location = new System.Drawing.Point(294, 241);
+			this.btnStatsSetSpellSlots5thLevel.Location = new System.Drawing.Point(281, 241);
 			this.btnStatsSetSpellSlots5thLevel.Name = "btnStatsSetSpellSlots5thLevel";
 			this.btnStatsSetSpellSlots5thLevel.Size = new System.Drawing.Size(35, 23);
 			this.btnStatsSetSpellSlots5thLevel.TabIndex = 63;
@@ -354,7 +354,7 @@
 			// 
 			// btnStatsSetSpellSlots2ndLevel
 			// 
-			this.btnStatsSetSpellSlots2ndLevel.Location = new System.Drawing.Point(220, 241);
+			this.btnStatsSetSpellSlots2ndLevel.Location = new System.Drawing.Point(184, 241);
 			this.btnStatsSetSpellSlots2ndLevel.Name = "btnStatsSetSpellSlots2ndLevel";
 			this.btnStatsSetSpellSlots2ndLevel.Size = new System.Drawing.Size(35, 23);
 			this.btnStatsSetSpellSlots2ndLevel.TabIndex = 62;
@@ -365,7 +365,7 @@
 			// 
 			// btnStatsSetSpellSlots7thLevel
 			// 
-			this.btnStatsSetSpellSlots7thLevel.Location = new System.Drawing.Point(368, 193);
+			this.btnStatsSetSpellSlots7thLevel.Location = new System.Drawing.Point(379, 193);
 			this.btnStatsSetSpellSlots7thLevel.Name = "btnStatsSetSpellSlots7thLevel";
 			this.btnStatsSetSpellSlots7thLevel.Size = new System.Drawing.Size(35, 23);
 			this.btnStatsSetSpellSlots7thLevel.TabIndex = 61;
@@ -376,7 +376,7 @@
 			// 
 			// btnStatsSetSpellSlots4thLevel
 			// 
-			this.btnStatsSetSpellSlots4thLevel.Location = new System.Drawing.Point(294, 192);
+			this.btnStatsSetSpellSlots4thLevel.Location = new System.Drawing.Point(281, 192);
 			this.btnStatsSetSpellSlots4thLevel.Name = "btnStatsSetSpellSlots4thLevel";
 			this.btnStatsSetSpellSlots4thLevel.Size = new System.Drawing.Size(35, 23);
 			this.btnStatsSetSpellSlots4thLevel.TabIndex = 60;
@@ -387,7 +387,7 @@
 			// 
 			// btnStatsSetSpellSlots1stLevel
 			// 
-			this.btnStatsSetSpellSlots1stLevel.Location = new System.Drawing.Point(220, 193);
+			this.btnStatsSetSpellSlots1stLevel.Location = new System.Drawing.Point(184, 193);
 			this.btnStatsSetSpellSlots1stLevel.Name = "btnStatsSetSpellSlots1stLevel";
 			this.btnStatsSetSpellSlots1stLevel.Size = new System.Drawing.Size(35, 23);
 			this.btnStatsSetSpellSlots1stLevel.TabIndex = 59;
@@ -398,7 +398,7 @@
 			// 
 			// textBox7
 			// 
-			this.textBox7.Location = new System.Drawing.Point(404, 269);
+			this.textBox7.Location = new System.Drawing.Point(415, 269);
 			this.textBox7.Name = "textBox7";
 			this.textBox7.Size = new System.Drawing.Size(21, 20);
 			this.textBox7.TabIndex = 58;
@@ -406,7 +406,7 @@
 			// 
 			// textBox8
 			// 
-			this.textBox8.Location = new System.Drawing.Point(404, 219);
+			this.textBox8.Location = new System.Drawing.Point(415, 219);
 			this.textBox8.Name = "textBox8";
 			this.textBox8.Size = new System.Drawing.Size(21, 20);
 			this.textBox8.TabIndex = 57;
@@ -414,7 +414,7 @@
 			// 
 			// textBox9
 			// 
-			this.textBox9.Location = new System.Drawing.Point(404, 170);
+			this.textBox9.Location = new System.Drawing.Point(415, 170);
 			this.textBox9.Name = "textBox9";
 			this.textBox9.Size = new System.Drawing.Size(21, 20);
 			this.textBox9.TabIndex = 56;
@@ -422,7 +422,7 @@
 			// 
 			// textBox4
 			// 
-			this.textBox4.Location = new System.Drawing.Point(328, 269);
+			this.textBox4.Location = new System.Drawing.Point(315, 269);
 			this.textBox4.Name = "textBox4";
 			this.textBox4.Size = new System.Drawing.Size(21, 20);
 			this.textBox4.TabIndex = 55;
@@ -430,49 +430,49 @@
 			// 
 			// textBox5
 			// 
-			this.textBox5.Location = new System.Drawing.Point(328, 219);
+			this.textBox5.Location = new System.Drawing.Point(315, 219);
 			this.textBox5.Name = "textBox5";
 			this.textBox5.Size = new System.Drawing.Size(21, 20);
 			this.textBox5.TabIndex = 54;
 			this.textBox5.Visible = false;
 			// 
-			// textBox6
+			// tbxStatsSetSpellSlot4thLevel
 			// 
-			this.textBox6.Location = new System.Drawing.Point(328, 170);
-			this.textBox6.Name = "textBox6";
-			this.textBox6.Size = new System.Drawing.Size(21, 20);
-			this.textBox6.TabIndex = 53;
-			this.textBox6.Visible = false;
+			this.tbxStatsSetSpellSlot4thLevel.Location = new System.Drawing.Point(315, 170);
+			this.tbxStatsSetSpellSlot4thLevel.Name = "tbxStatsSetSpellSlot4thLevel";
+			this.tbxStatsSetSpellSlot4thLevel.Size = new System.Drawing.Size(21, 20);
+			this.tbxStatsSetSpellSlot4thLevel.TabIndex = 53;
+			this.tbxStatsSetSpellSlot4thLevel.Visible = false;
 			// 
-			// textBox3
+			// tbxStatsSetSpellSlot3rdLevel
 			// 
-			this.textBox3.Location = new System.Drawing.Point(253, 269);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(21, 20);
-			this.textBox3.TabIndex = 52;
-			this.textBox3.Visible = false;
+			this.tbxStatsSetSpellSlot3rdLevel.Location = new System.Drawing.Point(217, 269);
+			this.tbxStatsSetSpellSlot3rdLevel.Name = "tbxStatsSetSpellSlot3rdLevel";
+			this.tbxStatsSetSpellSlot3rdLevel.Size = new System.Drawing.Size(21, 20);
+			this.tbxStatsSetSpellSlot3rdLevel.TabIndex = 52;
+			this.tbxStatsSetSpellSlot3rdLevel.Visible = false;
 			// 
-			// textBox2
+			// tbxStatsSetSpellSlot2ndLevel
 			// 
-			this.textBox2.Location = new System.Drawing.Point(253, 219);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(21, 20);
-			this.textBox2.TabIndex = 51;
-			this.textBox2.Visible = false;
+			this.tbxStatsSetSpellSlot2ndLevel.Location = new System.Drawing.Point(217, 219);
+			this.tbxStatsSetSpellSlot2ndLevel.Name = "tbxStatsSetSpellSlot2ndLevel";
+			this.tbxStatsSetSpellSlot2ndLevel.Size = new System.Drawing.Size(21, 20);
+			this.tbxStatsSetSpellSlot2ndLevel.TabIndex = 51;
+			this.tbxStatsSetSpellSlot2ndLevel.Visible = false;
 			// 
-			// textBox1
+			// tbxStatsSetSpellSlot1stLevel
 			// 
-			this.textBox1.Location = new System.Drawing.Point(253, 170);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(21, 20);
-			this.textBox1.TabIndex = 50;
-			this.textBox1.Visible = false;
+			this.tbxStatsSetSpellSlot1stLevel.Location = new System.Drawing.Point(217, 170);
+			this.tbxStatsSetSpellSlot1stLevel.Name = "tbxStatsSetSpellSlot1stLevel";
+			this.tbxStatsSetSpellSlot1stLevel.Size = new System.Drawing.Size(21, 20);
+			this.tbxStatsSetSpellSlot1stLevel.TabIndex = 50;
+			this.tbxStatsSetSpellSlot1stLevel.Visible = false;
 			// 
 			// lblStatsTitle
 			// 
 			this.lblStatsTitle.AutoSize = true;
 			this.lblStatsTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblStatsTitle.Location = new System.Drawing.Point(307, 5);
+			this.lblStatsTitle.Location = new System.Drawing.Point(338, 5);
 			this.lblStatsTitle.Name = "lblStatsTitle";
 			this.lblStatsTitle.Size = new System.Drawing.Size(111, 18);
 			this.lblStatsTitle.TabIndex = 49;
@@ -480,7 +480,7 @@
 			// 
 			// btnStatsDeathSavesResetFailure
 			// 
-			this.btnStatsDeathSavesResetFailure.Location = new System.Drawing.Point(210, 97);
+			this.btnStatsDeathSavesResetFailure.Location = new System.Drawing.Point(221, 97);
 			this.btnStatsDeathSavesResetFailure.Name = "btnStatsDeathSavesResetFailure";
 			this.btnStatsDeathSavesResetFailure.Size = new System.Drawing.Size(49, 23);
 			this.btnStatsDeathSavesResetFailure.TabIndex = 48;
@@ -490,7 +490,7 @@
 			// 
 			// btnStatsDeathSavesResetSuccess
 			// 
-			this.btnStatsDeathSavesResetSuccess.Location = new System.Drawing.Point(210, 73);
+			this.btnStatsDeathSavesResetSuccess.Location = new System.Drawing.Point(221, 73);
 			this.btnStatsDeathSavesResetSuccess.Name = "btnStatsDeathSavesResetSuccess";
 			this.btnStatsDeathSavesResetSuccess.Size = new System.Drawing.Size(49, 23);
 			this.btnStatsDeathSavesResetSuccess.TabIndex = 47;
@@ -500,7 +500,7 @@
 			// 
 			// btnStatsDeathSavesAddFailure
 			// 
-			this.btnStatsDeathSavesAddFailure.Location = new System.Drawing.Point(265, 97);
+			this.btnStatsDeathSavesAddFailure.Location = new System.Drawing.Point(276, 97);
 			this.btnStatsDeathSavesAddFailure.Name = "btnStatsDeathSavesAddFailure";
 			this.btnStatsDeathSavesAddFailure.Size = new System.Drawing.Size(40, 23);
 			this.btnStatsDeathSavesAddFailure.TabIndex = 46;
@@ -510,7 +510,7 @@
 			// 
 			// btnStatsDeathSavesAddSuccess
 			// 
-			this.btnStatsDeathSavesAddSuccess.Location = new System.Drawing.Point(265, 73);
+			this.btnStatsDeathSavesAddSuccess.Location = new System.Drawing.Point(276, 73);
 			this.btnStatsDeathSavesAddSuccess.Name = "btnStatsDeathSavesAddSuccess";
 			this.btnStatsDeathSavesAddSuccess.Size = new System.Drawing.Size(40, 23);
 			this.btnStatsDeathSavesAddSuccess.TabIndex = 45;
@@ -632,7 +632,7 @@
 			this.lblStatsValueSpellSlot9thLevel.AutoSize = true;
 			this.lblStatsValueSpellSlot9thLevel.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.lblStatsValueSpellSlot9thLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblStatsValueSpellSlot9thLevel.Location = new System.Drawing.Point(401, 272);
+			this.lblStatsValueSpellSlot9thLevel.Location = new System.Drawing.Point(412, 272);
 			this.lblStatsValueSpellSlot9thLevel.Name = "lblStatsValueSpellSlot9thLevel";
 			this.lblStatsValueSpellSlot9thLevel.Size = new System.Drawing.Size(14, 13);
 			this.lblStatsValueSpellSlot9thLevel.TabIndex = 32;
@@ -644,7 +644,7 @@
 			this.lblStatsValueSpellSlot8thLevel.AutoSize = true;
 			this.lblStatsValueSpellSlot8thLevel.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.lblStatsValueSpellSlot8thLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblStatsValueSpellSlot8thLevel.Location = new System.Drawing.Point(401, 222);
+			this.lblStatsValueSpellSlot8thLevel.Location = new System.Drawing.Point(412, 222);
 			this.lblStatsValueSpellSlot8thLevel.Name = "lblStatsValueSpellSlot8thLevel";
 			this.lblStatsValueSpellSlot8thLevel.Size = new System.Drawing.Size(14, 13);
 			this.lblStatsValueSpellSlot8thLevel.TabIndex = 31;
@@ -656,7 +656,7 @@
 			this.lblStatsValueSpellSlot7thLevel.AutoSize = true;
 			this.lblStatsValueSpellSlot7thLevel.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.lblStatsValueSpellSlot7thLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblStatsValueSpellSlot7thLevel.Location = new System.Drawing.Point(401, 173);
+			this.lblStatsValueSpellSlot7thLevel.Location = new System.Drawing.Point(412, 173);
 			this.lblStatsValueSpellSlot7thLevel.Name = "lblStatsValueSpellSlot7thLevel";
 			this.lblStatsValueSpellSlot7thLevel.Size = new System.Drawing.Size(14, 13);
 			this.lblStatsValueSpellSlot7thLevel.TabIndex = 30;
@@ -668,7 +668,7 @@
 			this.lblStatsValueSpellSlot6thLevel.AutoSize = true;
 			this.lblStatsValueSpellSlot6thLevel.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.lblStatsValueSpellSlot6thLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblStatsValueSpellSlot6thLevel.Location = new System.Drawing.Point(325, 272);
+			this.lblStatsValueSpellSlot6thLevel.Location = new System.Drawing.Point(312, 272);
 			this.lblStatsValueSpellSlot6thLevel.Name = "lblStatsValueSpellSlot6thLevel";
 			this.lblStatsValueSpellSlot6thLevel.Size = new System.Drawing.Size(14, 13);
 			this.lblStatsValueSpellSlot6thLevel.TabIndex = 29;
@@ -680,7 +680,7 @@
 			this.lblStatsValueSpellSlot5thLevel.AutoSize = true;
 			this.lblStatsValueSpellSlot5thLevel.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.lblStatsValueSpellSlot5thLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblStatsValueSpellSlot5thLevel.Location = new System.Drawing.Point(325, 222);
+			this.lblStatsValueSpellSlot5thLevel.Location = new System.Drawing.Point(312, 222);
 			this.lblStatsValueSpellSlot5thLevel.Name = "lblStatsValueSpellSlot5thLevel";
 			this.lblStatsValueSpellSlot5thLevel.Size = new System.Drawing.Size(14, 13);
 			this.lblStatsValueSpellSlot5thLevel.TabIndex = 28;
@@ -692,7 +692,7 @@
 			this.lblStatsValueSpellSlot4thLevel.AutoSize = true;
 			this.lblStatsValueSpellSlot4thLevel.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.lblStatsValueSpellSlot4thLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblStatsValueSpellSlot4thLevel.Location = new System.Drawing.Point(325, 173);
+			this.lblStatsValueSpellSlot4thLevel.Location = new System.Drawing.Point(312, 173);
 			this.lblStatsValueSpellSlot4thLevel.Name = "lblStatsValueSpellSlot4thLevel";
 			this.lblStatsValueSpellSlot4thLevel.Size = new System.Drawing.Size(14, 13);
 			this.lblStatsValueSpellSlot4thLevel.TabIndex = 27;
@@ -704,7 +704,7 @@
 			this.lblStatsValueSpellSlot3rdLevel.AutoSize = true;
 			this.lblStatsValueSpellSlot3rdLevel.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.lblStatsValueSpellSlot3rdLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblStatsValueSpellSlot3rdLevel.Location = new System.Drawing.Point(252, 272);
+			this.lblStatsValueSpellSlot3rdLevel.Location = new System.Drawing.Point(216, 272);
 			this.lblStatsValueSpellSlot3rdLevel.Name = "lblStatsValueSpellSlot3rdLevel";
 			this.lblStatsValueSpellSlot3rdLevel.Size = new System.Drawing.Size(14, 13);
 			this.lblStatsValueSpellSlot3rdLevel.TabIndex = 26;
@@ -716,7 +716,7 @@
 			this.lblStatsValueSpellSlot2ndLevel.AutoSize = true;
 			this.lblStatsValueSpellSlot2ndLevel.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.lblStatsValueSpellSlot2ndLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblStatsValueSpellSlot2ndLevel.Location = new System.Drawing.Point(252, 222);
+			this.lblStatsValueSpellSlot2ndLevel.Location = new System.Drawing.Point(216, 222);
 			this.lblStatsValueSpellSlot2ndLevel.Name = "lblStatsValueSpellSlot2ndLevel";
 			this.lblStatsValueSpellSlot2ndLevel.Size = new System.Drawing.Size(14, 13);
 			this.lblStatsValueSpellSlot2ndLevel.TabIndex = 25;
@@ -728,7 +728,7 @@
 			this.lblStatsValueSpellSlot1stLevel.AutoSize = true;
 			this.lblStatsValueSpellSlot1stLevel.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.lblStatsValueSpellSlot1stLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblStatsValueSpellSlot1stLevel.Location = new System.Drawing.Point(252, 173);
+			this.lblStatsValueSpellSlot1stLevel.Location = new System.Drawing.Point(216, 173);
 			this.lblStatsValueSpellSlot1stLevel.Name = "lblStatsValueSpellSlot1stLevel";
 			this.lblStatsValueSpellSlot1stLevel.Size = new System.Drawing.Size(14, 13);
 			this.lblStatsValueSpellSlot1stLevel.TabIndex = 24;
@@ -738,7 +738,7 @@
 			// lblStatsLabelSpellSlot9thLevel
 			// 
 			this.lblStatsLabelSpellSlot9thLevel.AutoSize = true;
-			this.lblStatsLabelSpellSlot9thLevel.Location = new System.Drawing.Point(351, 272);
+			this.lblStatsLabelSpellSlot9thLevel.Location = new System.Drawing.Point(362, 272);
 			this.lblStatsLabelSpellSlot9thLevel.Name = "lblStatsLabelSpellSlot9thLevel";
 			this.lblStatsLabelSpellSlot9thLevel.Size = new System.Drawing.Size(54, 13);
 			this.lblStatsLabelSpellSlot9thLevel.TabIndex = 23;
@@ -747,7 +747,7 @@
 			// lblStatsLabelSpellSlot8thLevel
 			// 
 			this.lblStatsLabelSpellSlot8thLevel.AutoSize = true;
-			this.lblStatsLabelSpellSlot8thLevel.Location = new System.Drawing.Point(351, 222);
+			this.lblStatsLabelSpellSlot8thLevel.Location = new System.Drawing.Point(362, 222);
 			this.lblStatsLabelSpellSlot8thLevel.Name = "lblStatsLabelSpellSlot8thLevel";
 			this.lblStatsLabelSpellSlot8thLevel.Size = new System.Drawing.Size(54, 13);
 			this.lblStatsLabelSpellSlot8thLevel.TabIndex = 22;
@@ -756,7 +756,7 @@
 			// lblStatsLabelSpellSlot7thLevel
 			// 
 			this.lblStatsLabelSpellSlot7thLevel.AutoSize = true;
-			this.lblStatsLabelSpellSlot7thLevel.Location = new System.Drawing.Point(351, 173);
+			this.lblStatsLabelSpellSlot7thLevel.Location = new System.Drawing.Point(362, 173);
 			this.lblStatsLabelSpellSlot7thLevel.Name = "lblStatsLabelSpellSlot7thLevel";
 			this.lblStatsLabelSpellSlot7thLevel.Size = new System.Drawing.Size(54, 13);
 			this.lblStatsLabelSpellSlot7thLevel.TabIndex = 21;
@@ -765,7 +765,7 @@
 			// lblStatsLabelSpellSlot6thLevel
 			// 
 			this.lblStatsLabelSpellSlot6thLevel.AutoSize = true;
-			this.lblStatsLabelSpellSlot6thLevel.Location = new System.Drawing.Point(275, 272);
+			this.lblStatsLabelSpellSlot6thLevel.Location = new System.Drawing.Point(262, 272);
 			this.lblStatsLabelSpellSlot6thLevel.Name = "lblStatsLabelSpellSlot6thLevel";
 			this.lblStatsLabelSpellSlot6thLevel.Size = new System.Drawing.Size(54, 13);
 			this.lblStatsLabelSpellSlot6thLevel.TabIndex = 20;
@@ -774,7 +774,7 @@
 			// lblStatsLabelSpellSlot5thLevel
 			// 
 			this.lblStatsLabelSpellSlot5thLevel.AutoSize = true;
-			this.lblStatsLabelSpellSlot5thLevel.Location = new System.Drawing.Point(275, 222);
+			this.lblStatsLabelSpellSlot5thLevel.Location = new System.Drawing.Point(262, 222);
 			this.lblStatsLabelSpellSlot5thLevel.Name = "lblStatsLabelSpellSlot5thLevel";
 			this.lblStatsLabelSpellSlot5thLevel.Size = new System.Drawing.Size(54, 13);
 			this.lblStatsLabelSpellSlot5thLevel.TabIndex = 19;
@@ -783,7 +783,7 @@
 			// lblStatsLabelSpellSlot4thLevel
 			// 
 			this.lblStatsLabelSpellSlot4thLevel.AutoSize = true;
-			this.lblStatsLabelSpellSlot4thLevel.Location = new System.Drawing.Point(275, 173);
+			this.lblStatsLabelSpellSlot4thLevel.Location = new System.Drawing.Point(262, 173);
 			this.lblStatsLabelSpellSlot4thLevel.Name = "lblStatsLabelSpellSlot4thLevel";
 			this.lblStatsLabelSpellSlot4thLevel.Size = new System.Drawing.Size(54, 13);
 			this.lblStatsLabelSpellSlot4thLevel.TabIndex = 18;
@@ -792,7 +792,7 @@
 			// lblStatsLabelSpellSlot3rdLevel
 			// 
 			this.lblStatsLabelSpellSlot3rdLevel.AutoSize = true;
-			this.lblStatsLabelSpellSlot3rdLevel.Location = new System.Drawing.Point(201, 272);
+			this.lblStatsLabelSpellSlot3rdLevel.Location = new System.Drawing.Point(165, 272);
 			this.lblStatsLabelSpellSlot3rdLevel.Name = "lblStatsLabelSpellSlot3rdLevel";
 			this.lblStatsLabelSpellSlot3rdLevel.Size = new System.Drawing.Size(54, 13);
 			this.lblStatsLabelSpellSlot3rdLevel.TabIndex = 17;
@@ -801,7 +801,7 @@
 			// lblStatsLabelSpellSlot2ndLevel
 			// 
 			this.lblStatsLabelSpellSlot2ndLevel.AutoSize = true;
-			this.lblStatsLabelSpellSlot2ndLevel.Location = new System.Drawing.Point(198, 222);
+			this.lblStatsLabelSpellSlot2ndLevel.Location = new System.Drawing.Point(162, 222);
 			this.lblStatsLabelSpellSlot2ndLevel.Name = "lblStatsLabelSpellSlot2ndLevel";
 			this.lblStatsLabelSpellSlot2ndLevel.Size = new System.Drawing.Size(57, 13);
 			this.lblStatsLabelSpellSlot2ndLevel.TabIndex = 16;
@@ -810,7 +810,7 @@
 			// lblStatsLabelSpellSlot1stLevel
 			// 
 			this.lblStatsLabelSpellSlot1stLevel.AutoSize = true;
-			this.lblStatsLabelSpellSlot1stLevel.Location = new System.Drawing.Point(202, 173);
+			this.lblStatsLabelSpellSlot1stLevel.Location = new System.Drawing.Point(166, 173);
 			this.lblStatsLabelSpellSlot1stLevel.Name = "lblStatsLabelSpellSlot1stLevel";
 			this.lblStatsLabelSpellSlot1stLevel.Size = new System.Drawing.Size(53, 13);
 			this.lblStatsLabelSpellSlot1stLevel.TabIndex = 15;
@@ -819,7 +819,7 @@
 			// lblStatsLabelSpellSlots
 			// 
 			this.lblStatsLabelSpellSlots.AutoSize = true;
-			this.lblStatsLabelSpellSlots.Location = new System.Drawing.Point(262, 148);
+			this.lblStatsLabelSpellSlots.Location = new System.Drawing.Point(244, 147);
 			this.lblStatsLabelSpellSlots.Name = "lblStatsLabelSpellSlots";
 			this.lblStatsLabelSpellSlots.Size = new System.Drawing.Size(102, 13);
 			this.lblStatsLabelSpellSlots.TabIndex = 14;
@@ -828,7 +828,7 @@
 			// lblStatsValueDeathSavesFailures
 			// 
 			this.lblStatsValueDeathSavesFailures.AutoSize = true;
-			this.lblStatsValueDeathSavesFailures.Location = new System.Drawing.Point(380, 102);
+			this.lblStatsValueDeathSavesFailures.Location = new System.Drawing.Point(395, 102);
 			this.lblStatsValueDeathSavesFailures.Name = "lblStatsValueDeathSavesFailures";
 			this.lblStatsValueDeathSavesFailures.Size = new System.Drawing.Size(30, 13);
 			this.lblStatsValueDeathSavesFailures.TabIndex = 13;
@@ -837,7 +837,7 @@
 			// lblStatsValueDeathSavesSuccesses
 			// 
 			this.lblStatsValueDeathSavesSuccesses.AutoSize = true;
-			this.lblStatsValueDeathSavesSuccesses.Location = new System.Drawing.Point(380, 78);
+			this.lblStatsValueDeathSavesSuccesses.Location = new System.Drawing.Point(395, 78);
 			this.lblStatsValueDeathSavesSuccesses.Name = "lblStatsValueDeathSavesSuccesses";
 			this.lblStatsValueDeathSavesSuccesses.Size = new System.Drawing.Size(30, 13);
 			this.lblStatsValueDeathSavesSuccesses.TabIndex = 12;
@@ -846,7 +846,7 @@
 			// lblStatsLabelDeathSavesFailures
 			// 
 			this.lblStatsLabelDeathSavesFailures.AutoSize = true;
-			this.lblStatsLabelDeathSavesFailures.Location = new System.Drawing.Point(327, 102);
+			this.lblStatsLabelDeathSavesFailures.Location = new System.Drawing.Point(342, 102);
 			this.lblStatsLabelDeathSavesFailures.Name = "lblStatsLabelDeathSavesFailures";
 			this.lblStatsLabelDeathSavesFailures.Size = new System.Drawing.Size(46, 13);
 			this.lblStatsLabelDeathSavesFailures.TabIndex = 11;
@@ -855,7 +855,7 @@
 			// lblStatsLabelDeathSavesSuccesses
 			// 
 			this.lblStatsLabelDeathSavesSuccesses.AutoSize = true;
-			this.lblStatsLabelDeathSavesSuccesses.Location = new System.Drawing.Point(311, 78);
+			this.lblStatsLabelDeathSavesSuccesses.Location = new System.Drawing.Point(326, 78);
 			this.lblStatsLabelDeathSavesSuccesses.Name = "lblStatsLabelDeathSavesSuccesses";
 			this.lblStatsLabelDeathSavesSuccesses.Size = new System.Drawing.Size(62, 13);
 			this.lblStatsLabelDeathSavesSuccesses.TabIndex = 10;
@@ -865,7 +865,7 @@
 			// 
 			this.lblStatsLabelDeathSaves.AutoSize = true;
 			this.lblStatsLabelDeathSaves.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblStatsLabelDeathSaves.Location = new System.Drawing.Point(275, 52);
+			this.lblStatsLabelDeathSaves.Location = new System.Drawing.Point(260, 49);
 			this.lblStatsLabelDeathSaves.Name = "lblStatsLabelDeathSaves";
 			this.lblStatsLabelDeathSaves.Size = new System.Drawing.Size(69, 13);
 			this.lblStatsLabelDeathSaves.TabIndex = 9;
@@ -952,7 +952,7 @@
 			this.tabInitTracker.Location = new System.Drawing.Point(4, 22);
 			this.tabInitTracker.Name = "tabInitTracker";
 			this.tabInitTracker.Padding = new System.Windows.Forms.Padding(3);
-			this.tabInitTracker.Size = new System.Drawing.Size(427, 329);
+			this.tabInitTracker.Size = new System.Drawing.Size(455, 329);
 			this.tabInitTracker.TabIndex = 1;
 			this.tabInitTracker.Text = "Init Tracker";
 			this.tabInitTracker.UseVisualStyleBackColor = true;
@@ -961,7 +961,7 @@
 			// 
 			this.lblTrackerTitle.AutoSize = true;
 			this.lblTrackerTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblTrackerTitle.Location = new System.Drawing.Point(307, 5);
+			this.lblTrackerTitle.Location = new System.Drawing.Point(338, 5);
 			this.lblTrackerTitle.Name = "lblTrackerTitle";
 			this.lblTrackerTitle.Size = new System.Drawing.Size(114, 18);
 			this.lblTrackerTitle.TabIndex = 0;
@@ -973,7 +973,7 @@
 			this.rtbMessages.Location = new System.Drawing.Point(12, 373);
 			this.rtbMessages.Name = "rtbMessages";
 			this.rtbMessages.ReadOnly = true;
-			this.rtbMessages.Size = new System.Drawing.Size(435, 81);
+			this.rtbMessages.Size = new System.Drawing.Size(463, 81);
 			this.rtbMessages.TabIndex = 1;
 			this.rtbMessages.Text = "";
 			// 
@@ -989,9 +989,10 @@
 			// 
 			// FormMain
 			// 
+			this.AcceptButton = this.btnStatsCreatePartyCharacter;
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(458, 479);
+			this.ClientSize = new System.Drawing.Size(486, 479);
 			this.Controls.Add(this.lblInfoLabel);
 			this.Controls.Add(this.rtbMessages);
 			this.Controls.Add(this.tabControl);
@@ -1065,9 +1066,9 @@
         private System.Windows.Forms.Button btnStatsDeathSavesResetSuccess;
         private System.Windows.Forms.Label lblStatsTitle;
         private System.Windows.Forms.Label lblTrackerTitle;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbxStatsSetSpellSlot3rdLevel;
+        private System.Windows.Forms.TextBox tbxStatsSetSpellSlot2ndLevel;
+        private System.Windows.Forms.TextBox tbxStatsSetSpellSlot1stLevel;
         private System.Windows.Forms.Button btnStatsSetSpellSlots9thLevel;
         private System.Windows.Forms.Button btnStatsSetSpellSlots6thLevel;
         private System.Windows.Forms.Button btnStatsSetSpellSlots3rdLevel;
@@ -1082,15 +1083,15 @@
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Button btnStatsSpellSlotsCast1stLevel;
-        private System.Windows.Forms.Button btnStatsSpellSlotsCast9thLevel;
-        private System.Windows.Forms.Button btnStatsSpellSlotsCast8thLevel;
-        private System.Windows.Forms.Button btnStatsSpellSlotsCast7thLevel;
-        private System.Windows.Forms.Button btnStatsSpellSlotsCast6thLevel;
-        private System.Windows.Forms.Button btnStatsSpellSlotsCast5thLevel;
-        private System.Windows.Forms.Button btnStatsSpellSlotsCast4thLevel;
-        private System.Windows.Forms.Button btnStatsSpellSlotsCast3rdLevel;
-        private System.Windows.Forms.Button btnStatsSpellSlotsCast2ndLevel;
+        private System.Windows.Forms.TextBox tbxStatsSetSpellSlot4thLevel;
+        private System.Windows.Forms.Button btnStatsCastSpellSlots1stLevel;
+        private System.Windows.Forms.Button btnStatsCastSpellSlots9thLevel;
+        private System.Windows.Forms.Button btnStatsCastSpellSlots8thLevel;
+        private System.Windows.Forms.Button btnStatsCastSpellSlots7thLevel;
+        private System.Windows.Forms.Button btnStatsCastSpellSlots6thLevel;
+        private System.Windows.Forms.Button btnStatsCastSpellSlots5thLevel;
+        private System.Windows.Forms.Button btnStatsCastSpellSlots4thLevel;
+        private System.Windows.Forms.Button btnStatsCastSpellSlots3rdLevel;
+        private System.Windows.Forms.Button btnStatsCastSpellSlots2ndLevel;
     }
 }
